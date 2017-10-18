@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp">
+
+        <ImageView
+            android:id="@+id/xq_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:src="@drawable/leftjiantou" />
+
+        <ImageView
+            android:id="@+id/xq_gengduo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:padding="5dp"
+            android:src="@drawable/sandian" />
+
+        <com.androidkun.xtablayout.XTabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/xq_share"
+            android:layout_toRightOf="@+id/xq_back"
+
+            app:xTabIndicatorColor="#000"
+            app:xTabIndicatorHeight="2dp"
+            app:xTabIndicatorWidth="20dp"
+            app:xTabMode="scrollable"
+            app:xTabSelectedTextColor="#000"
+            app:xTabSelectedTextSize="17sp"
+            app:xTabTextColor="#000"
+            app:xTabTextSize="15sp"></com.androidkun.xtablayout.XTabLayout>
+
+        <ImageView
+            android:id="@+id/xq_share"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/xq_gengduo"
+            android:layout_toStartOf="@+id/xq_gengduo"
+            android:padding="8dp"
+            android:src="@drawable/share" />
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/xq_vp"
+        android:layout_width="match_parent"
+        android:layout_height="340dp"
+        android:layout_above="@+id/linearLayout5"
+        android:layout_below="@+id/relativeLayout"></android.support.v4.view.ViewPager>
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/kefu"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:src="@drawable/ayp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="客服" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dianpu"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:src="@drawable/dianpu" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="店铺" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/guanzhu"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_guanzhu"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:src="@drawable/guanzhu" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="客服" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/shapcar"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:padding="5dp"
+                android:src="@drawable/shopcar" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="购物车" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/joinshapcar"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#f00"
+            android:text="加入购物车"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

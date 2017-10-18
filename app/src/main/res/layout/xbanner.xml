@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.stx.xhb.xbanner.XBanner
+        android:id="@+id/vp_gg"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"></com.stx.xhb.xbanner.XBanner>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_fl"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"></android.support.v4.view.ViewPager>
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/miaosha"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_ms"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"></android.support.v7.widget.RecyclerView>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/tuijian"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_tj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
